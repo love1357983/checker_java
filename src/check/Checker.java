@@ -1,7 +1,5 @@
 package check;
 
-
-
 import java.awt.FlowLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -21,7 +19,7 @@ public class Checker extends Thread {
 	        java.io.BufferedInputStream in;
 	        strbuf="Server started!";
 	        w.sockettext.setText(strbuf);
-	        System.out.println("Server started!");
+	        System.out.println("Oh Server started!");
 	        while (!OutServer) {
 	            socket = null;
 	            try {
@@ -32,7 +30,7 @@ public class Checker extends Thread {
 	                        + socket.getInetAddress());
 	                strbuf+="connected : InetAddress = "+ socket.getInetAddress();
 	    	        w.sockettext.setText(strbuf);
-	                // TimeOut�ɶ�
+	                // TimeOut®É¶¡
 	                socket.setSoTimeout(1000);
 	 
 	                in = new java.io.BufferedInputStream(socket.getInputStream());
